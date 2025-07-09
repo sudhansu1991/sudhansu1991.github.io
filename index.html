@@ -550,6 +550,73 @@
 <footer>
     <p>&copy; 2025 Dr. Sudhansu Bala Das</p>
 </footer>
+<!-- Place this where you want the button -->
+<div style="text-align:center; margin: 30px;">
+    <button onclick="toggleGallery()" style="padding: 12px 20px; font-weight: bold; background-color: #005b96; color: white; border: none; border-radius: 6px; cursor: pointer;">
+        Show/Hide Gallery
+    </button>
+</div>
+
+<section id="gallery" style="display:none;">
+    <h2>Photo Gallery</h2>
+    <div class="gallery-grid">
+        <figure class="gallery-item">
+            <img src="collabaration.PNG" alt="Collaboration at IIT Patna">
+            <figcaption>Collaboration Visit – IIT Patna</figcaption>
+        </figure>
+        <figure class="gallery-item">
+            <img src="conference1.PNG" alt="ICADCML Conference">
+            <figcaption>ICADCML 2023 – NIT Rourkela</figcaption>
+        </figure>
+        <figure class="gallery-item">
+            <img src="conference2.PNG" alt="ICADCML Keynote Session">
+            <figcaption>Keynote Session – NIT Rourkela</figcaption>
+        </figure>
+        <figure class="gallery-item">
+            <img src="conference3.PNG" alt="NIT Rourkela Session">
+            <figcaption>Session – NIT Rourkela</figcaption>
+        </figure>
+        <figure class="gallery-item">
+            <img src="conference4.PNG" alt="NIT Rourkela Interaction">
+            <figcaption>Student Interaction – NIT Rourkela</figcaption>
+        </figure>
+        <figure class="gallery-item">
+            <img src="conference5.PNG" alt="Conference Podium">
+            <figcaption>Conference Address – NIT Rourkela</figcaption>
+        </figure>
+        <figure class="gallery-item">
+            <img src="phd1.PNG" alt="PhD Team">
+            <figcaption>PhD Mentorship Team</figcaption>
+        </figure>
+        <figure class="gallery-item">
+            <img src="phd2.PNG" alt="Research Group">
+            <figcaption>Research Group</figcaption>
+        </figure>
+        <figure class="gallery-item">
+            <img src="phddefence.PNG" alt="PhD Defense">
+            <figcaption>PhD Defense Presentation</figcaption>
+        </figure>
+        <figure class="gallery-item">
+            <img src="phdlife1.PNG" alt="PhD Journey">
+            <figcaption>PhD Journey & Lab</figcaption>
+        </figure>
+    </div>
+</section>
+
+<!-- Footer should always be last -->
+<footer>
+    <p>&copy; 2025 Dr. Sudhansu Bala Das</p>
+</footer>
+
+<script>
+function toggleGallery() {
+    const gallery = document.getElementById("gallery");
+    gallery.style.display = (gallery.style.display === "none" || gallery.style.display === "") ? "block" : "none";
+}
+</script>
+
+</body>
+</html>
 
 </body>
 </html>
