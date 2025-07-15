@@ -23,6 +23,36 @@
 
     <!-- ✅ Your CSS Style -->
   <style>
+      blockquote {
+    font-style: italic;
+    margin: 1em 0;
+    padding-left: 1em;
+    border-left: 4px solid var(--primary-color);
+    background-color: #f1faff;
+}
+/* Quotes Slider */
+.quote-slider {
+    background-color: #f1faff;
+    padding: 20px;
+    text-align: center;
+    font-style: italic;
+    font-size: 1.1em;
+}
+
+.quote-slide {
+    display: none;
+    animation: fade 1s ease-in-out;
+}
+
+.quote-slide.active {
+    display: block;
+}
+
+@keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
     :root {
         --primary-color: #005b96;
         --background-color: #f0f4f8;
@@ -211,18 +241,22 @@
     <p>Email: <a href="mailto:baladas.sudhansu@gmail.com" style="color:#ffe600;">baladas.sudhansu@gmail.com</a></p>
     <a href="my_resume.pdf" class="cv-download" download>📄 Download CV</a>
 </header>
-<section id="quotes">
-    <h2>Inspirational Quotes</h2>
-    <blockquote>“विद्यां चाविद्यां च यस्तद्वेदोभयंसह।” — <em>ईशोपनिषद्</em><br>
+<!-- ✅ QUOTES SLIDER SECTION -->
+<div class="quote-slider">
+    <div class="quote-slide active">
+        “विद्यां चाविद्यां च यस्तद्वेदोभयंसह।” — <em>ईशोपनिषद्</em><br>
         <small><em>(vidyāṁ cāvidyāṁ ca yastad vedobhayaṁ saha)</em> — “One who knows both knowledge and ignorance together…”</small>
-    </blockquote>
-    <blockquote>“जो जैसा सोचता है, वैसा ही बन जाता है।” — <em>भगवद्गीता</em><br>
+    </div>
+    <div class="quote-slide">
+        “जो जैसा सोचता है, वैसा ही बन जाता है।” — <em>भगवद्गीता</em><br>
         <small><em>(Jo jaisā sochtā hai, vaisā ban jātā hai)</em> — “You become what you think.”</small>
-    </blockquote>
-    <blockquote>"Is í an eagna an bua is mó." — <em>Irish Proverb</em><br>
+    </div>
+    <div class="quote-slide">
+        "Is í an eagna an bua is mó." — <em>Irish Proverb</em><br>
         <small><em>“Wisdom is the greatest virtue.”</em></small>
-    </blockquote>
-</section>
+    </div>
+</div>
+
 
 <nav>
     <a href="#overview">Overview</a>
