@@ -11,7 +11,6 @@
   <meta name="author" content="Dr. Sudhansu Bala Das" />
 
 <style>
-
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -21,265 +20,150 @@ body {
   font-size: 16px;
 }
 
-
-/* ===== Header Profile Area ===== */
-
 header {
   max-width: 1050px;
   margin: 30px auto 20px auto;
-  padding: 35px 35px;
-
+  padding: 35px;
   display: flex;
   align-items: center;
   gap: 35px;
-
   background: white;
-
   border-radius: 15px;
-
-  box-shadow:
-  0 4px 18px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 18px rgba(0,0,0,0.08);
 }
-
 
 .profile-photo {
-
   width: 170px;
   height: 170px;
-
   border-radius: 50%;
   object-fit: cover;
-
   border: 4px solid #e5eef7;
-
-  box-shadow:
-  0 4px 12px rgba(0,0,0,0.15);
-
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
-
 
 .header-text h1 {
-
-  margin:0;
-
-  font-size:36px;
-
-  color:#123c69;
-
-  font-weight:700;
-
+  margin: 0;
+  font-size: 36px;
+  color: #123c69;
+  font-weight: 700;
 }
-
 
 .header-text p {
-
-  margin:7px 0;
-
-  color:#444;
-
-  font-size:17px;
-
+  margin: 7px 0;
+  color: #444;
+  font-size: 17px;
 }
-
-
-
-/* ===== Navigation ===== */
 
 nav {
-
- max-width:1050px;
-
- margin:0 auto 25px auto;
-
- padding:16px 25px;
-
- background:white;
-
- border-radius:12px;
-
- text-align:center;
-
- box-shadow:
- 0 3px 12px rgba(0,0,0,0.06);
-
+  max-width: 1050px;
+  margin: 0 auto 25px auto;
+  padding: 16px 25px;
+  background: white;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.06);
 }
-
 
 nav a {
-
- color:#005b96;
-
- text-decoration:none;
-
- font-weight:600;
-
- margin:0 18px;
-
- font-size:16px;
-
+  color: #005b96;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 0 18px;
+  font-size: 16px;
+  cursor: pointer;
 }
-
 
 nav a:hover {
-
- color:#002f4b;
-
- text-decoration:underline;
-
+  color: #002f4b;
+  text-decoration: underline;
 }
-
-
-
-/* ===== Content ===== */
-
 
 main {
-
- max-width:1050px;
-
- margin:auto;
-
- padding:5px 25px 30px 25px;
-
+  max-width: 1050px;
+  margin: auto;
+  padding: 5px 25px 30px 25px;
 }
-
 
 section {
-
- background:white;
-
- padding:35px;
-
- margin-bottom:30px;
-
- border-radius:15px;
-
- box-shadow:
- 0 4px 18px rgba(0,0,0,0.07);
-
+  background: white;
+  padding: 35px;
+  margin-bottom: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.07);
 }
-
-
 
 h2 {
-
- color:#123c69;
-
- font-size:27px;
-
- margin-bottom:20px;
-
- padding-bottom:8px;
-
- border-bottom:3px solid #e5eef7;
-
+  color: #123c69;
+  font-size: 27px;
+  margin-bottom: 20px;
+  padding-bottom: 8px;
+  border-bottom: 3px solid #e5eef7;
 }
 
-
+h3 {
+  color: #123c69;
+  margin-top: 25px;
+}
 
 p {
-
- text-align:justify;
-
+  text-align: justify;
 }
-
-
 
 a {
-
- color:#005b96;
-
- text-decoration:none;
-
+  color: #005b96;
+  text-decoration: none;
 }
-
 
 a:hover {
-
- text-decoration:underline;
-
+  text-decoration: underline;
 }
-
 
 ul {
-
- padding-left:25px;
-
+  padding-left: 25px;
 }
-
 
 li {
-
- margin-bottom:10px;
-
+  margin-bottom: 12px;
 }
-
-
-
-/* ===== Footer ===== */
-
 
 footer {
-
- max-width:1050px;
-
- margin:20px auto;
-
- padding:25px;
-
- background:white;
-
- border-radius:12px;
-
- text-align:center;
-
- color:#555;
-
- box-shadow:
- 0 3px 12px rgba(0,0,0,0.06);
-
+  max-width: 1050px;
+  margin: 20px auto;
+  padding: 25px;
+  background: white;
+  border-radius: 12px;
+  text-align: center;
+  color: #555;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.06);
 }
 
-
-
-/* Mobile */
-
-@media(max-width:750px){
-
-
-header{
-
-flex-direction:column;
-
-text-align:center;
-
+.page-section {
+  display: none;
 }
 
-
-nav a{
-
-display:inline-block;
-
-margin:8px 10px;
-
+.page-section.active {
+  display: block;
 }
 
+@media(max-width:750px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
 
-.header-text h1{
+  nav a {
+    display: inline-block;
+    margin: 8px 10px;
+  }
 
-font-size:28px;
+  .header-text h1 {
+    font-size: 28px;
+  }
 
+  section {
+    padding: 25px;
+  }
 }
-
-
-section{
-
-padding:25px;
-
-}
-
-}
-
 </style>
 </head>
 
@@ -292,116 +176,75 @@ padding:25px;
     <h1>Dr. Sudhansu Bala Das</h1>
     <p>Postdoctoral Researcher, University of Galway, Ireland</p>
     <p>Natural Language Processing | Machine Translation | Data Science | Digital Humanities</p>
-    <p>
-      Email:
-      <a href="mailto:baladas.sudhansu@gmail.com">baladas.sudhansu@gmail.com</a>
-    </p>
+    <p>Email: <a href="mailto:baladas.sudhansu@gmail.com">baladas.sudhansu@gmail.com</a></p>
   </div>
 </header>
 
 <nav>
-  <a href="#home">Home</a>
-
+  <a onclick="showPage('home')">Home</a>
   <a href="my_resume.pdf" target="_blank">CV</a>
-
-  <a href="#research">Research</a>
-
-  <a href="https://www.linkedin.com/in/dr-sudhansu-bala-das-29832160/" target="_blank">
-    LinkedIn
-  </a>
-
-  <a href="https://scholar.google.com/" target="_blank">
-    Google Scholar
-  </a>
-
-  <a href="https://orcid.org/0000-0002-8150-3165" target="_blank">
-    ORCiD
-  </a>
+  <a onclick="showPage('research')">Research</a>
+  <a href="https://www.linkedin.com/in/dr-sudhansu-bala-das-29832160/" target="_blank">LinkedIn</a>
+  <a href="https://scholar.google.com/" target="_blank">Google Scholar</a>
+  <a href="https://orcid.org/0000-0002-8150-3165" target="_blank">ORCiD</a>
 </nav>
 
 <main>
 
-<section id="home">
+<section id="home" class="page-section active">
   <h2>Greetings from my corner of the WEB! 😊</h2>
 
   <p>
-    I am currently a
-    <strong>Postdoctoral Researcher</strong> at
-    <a href="https://www.universityofgalway.ie/" target="_blank">
-      <strong>University of Galway, Ireland</strong>
-    </a>,
-    working at the intersection of
-    <strong>Artificial Intelligence (AI)</strong>,
-    <strong>Natural Language Processing (NLP)</strong>,
-    <strong>Data Science</strong>, and
+    I am currently a <strong>Postdoctoral Researcher</strong> at
+    <a href="https://www.universityofgalway.ie/" target="_blank"><strong>University of Galway, Ireland</strong></a>,
+    working at the intersection of <strong>Artificial Intelligence (AI)</strong>,
+    <strong>Natural Language Processing (NLP)</strong>, <strong>Data Science</strong>, and
     <strong>Digital Humanities</strong>.
   </p>
 
   <p>
-    My current research focuses on developing AI-driven computational methods for
-    understanding multilingual and historical textual data. I work on
-    <strong>Natural Language Processing</strong>,
-    <strong>Knowledge Graphs</strong>,
-    <strong>Network Analysis</strong>,
-    <strong>Machine Translation</strong>, and
-    <strong>Large Language Models (LLMs)</strong>
+    My current research focuses on developing AI-driven computational methods for understanding multilingual
+    and historical textual data. I work on <strong>Natural Language Processing</strong>,
+    <strong>Knowledge Graphs</strong>, <strong>Network Analysis</strong>,
+    <strong>Machine Translation</strong>, and <strong>Large Language Models (LLMs)</strong>
     to make complex textual resources more accessible and meaningful.
   </p>
 
   <p>
-    Before joining the University of Galway, I worked as an
-    <strong>Assistant Professor (Grade I)</strong> at
-    <a href="https://xim.edu.in/" target="_blank">
-      <strong>XIM University, Bhubaneswar, India</strong>
-    </a>,
-    where I was involved in teaching Computer Science courses, mentoring students,
-    and guiding research projects in Artificial Intelligence and Machine Learning.
+    Before joining the University of Galway, I worked as an <strong>Assistant Professor (Grade I)</strong> at
+    <a href="https://xim.edu.in/" target="_blank"><strong>XIM University, Bhubaneswar, India</strong></a>,
+    where I was involved in teaching Computer Science courses, mentoring students, and guiding research
+    projects in Artificial Intelligence and Machine Learning.
   </p>
 
   <p>
     Prior to my academic journey, I worked with the
-    <a href="https://www.drdo.gov.in/" target="_blank">
-      <strong>Defence Research and Development Organisation (DRDO), India</strong>
-    </a>,
-    as a Junior and Senior Research Fellow. During my time at DRDO, I developed
-    AI-based intelligent systems, speech recognition applications, human-machine
-    interaction tools, and multimodal computational solutions for real-world applications.
+    <a href="https://www.drdo.gov.in/" target="_blank"><strong>Defence Research and Development Organisation (DRDO), India</strong></a>,
+    as a Junior and Senior Research Fellow. During my time at DRDO, I developed AI-based intelligent systems,
+    speech recognition applications, human-machine interaction tools, and multimodal computational solutions
+    for real-world applications.
   </p>
 
   <p>
-    I earned my
-    <strong>Ph.D. in Computer Science and Engineering</strong> from the
-    <a href="https://www.nitrkl.ac.in/" target="_blank">
-      <strong>National Institute of Technology Rourkela, India</strong>
-    </a>,
+    I earned my <strong>Ph.D. in Computer Science and Engineering</strong> from the
+    <a href="https://www.nitrkl.ac.in/" target="_blank"><strong>National Institute of Technology Rourkela, India</strong></a>,
     under the supervision of
-    <a href="https://mishra-tapas.github.io/" target="_blank">
-      <strong>Dr. Tapas Kumar Mishra</strong>
-    </a>
+    <a href="https://mishra-tapas.github.io/" target="_blank"><strong>Dr. Tapas Kumar Mishra</strong></a>
     (NIT Rourkela) and
-    <a href="https://www.iitbhu.ac.in/dept/cse/people/bidytcse" target="_blank">
-      <strong>Dr. Bidyut Kumar Patra</strong>
-    </a>
-    (IIT BHU, Varanasi, India).
-    My doctoral dissertation, titled
+    <a href="https://www.iitbhu.ac.in/dept/cse/people/bidytcse" target="_blank"><strong>Dr. Bidyut Kumar Patra</strong></a>
+    (IIT BHU, Varanasi, India). My doctoral dissertation, titled
     <strong>"Exploring Efficacy of Machine Translation System for Indian Languages,"</strong>
-    focused on developing multilingual machine translation approaches for
-    low-resource Indian languages, with the broader goal of reducing language
-    barriers through AI.
+    focused on developing multilingual machine translation approaches for low-resource Indian languages,
+    with the broader goal of reducing language barriers through AI.
   </p>
 
   <p>
-    Prior to my Ph.D., I completed my
-    <strong>M.Tech in Computer Science and Engineering</strong> from
-    <a href="https://www.vssut.ac.in/" target="_blank">
-      <strong>Veer Surendra Sai University of Technology (VSSUT), India</strong>
-    </a>,
+    Prior to my Ph.D., I completed my <strong>M.Tech in Computer Science and Engineering</strong> from
+    <a href="https://www.vssut.ac.in/" target="_blank"><strong>Veer Surendra Sai University of Technology (VSSUT), India</strong></a>,
     where I received the <strong>University Gold Medal</strong> for academic excellence.
   </p>
 
-  <p>
-    My research interests broadly include:
-  </p>
+  <p>My research interests broadly include:</p>
 
   <ul>
     <li>🔹 Natural Language Processing (NLP)</li>
@@ -415,221 +258,127 @@ padding:25px;
   </ul>
 
   <p>
-    Research grows through curiosity, collaboration, and shared ideas—so feel free
-    to reach out to me at
-    <strong>baladas[dot]sudhansu[at]gmail[dot]com</strong>.
-    I am always happy to connect with researchers, students, and anyone passionate
-    about AI, languages, and technology. 😊
+    Research grows through curiosity, collaboration, and shared ideas—so feel free to reach out to me at
+    <strong>baladas[dot]sudhansu[at]gmail[dot]com</strong>. I am always happy to connect with researchers,
+    students, and anyone passionate about AI, languages, and technology. 😊
   </p>
 </section>
 
-<section id="research">
+<section id="research" class="page-section">
+  <h2>Research</h2>
 
-<h2>Research</h2>
+  <p>
+    My research focuses on Artificial Intelligence, Natural Language Processing (NLP), Machine Translation,
+    Data Science, and Digital Humanities. I am interested in developing AI-based technologies for multilingual
+    and low-resource languages, historical text analysis, and real-world intelligent systems.
+  </p>
 
-<p>
-My research focuses on Artificial Intelligence, Natural Language Processing (NLP),
-Machine Translation, Data Science, and Digital Humanities. I am interested in
-developing AI-based technologies for multilingual and low-resource languages,
-historical text analysis, and real-world intelligent systems.
-</p>
+  <h3>Research Interests</h3>
 
+  <ul>
+    <li>🔹 Natural Language Processing (NLP)</li>
+    <li>🔹 Machine Translation and Multilingual AI</li>
+    <li>🔹 Large Language Models (LLMs)</li>
+    <li>🔹 Low-Resource Language Technologies</li>
+    <li>🔹 Digital Humanities and Computational Manuscript Analysis</li>
+    <li>🔹 Knowledge Graphs and Network Science</li>
+    <li>🔹 Speech Processing and Multimodal AI</li>
+  </ul>
 
-<h3>Research Interests</h3>
+  <h2>Publications</h2>
 
-<ul>
-<li>🔹 Natural Language Processing (NLP)</li>
-<li>🔹 Machine Translation and Multilingual AI</li>
-<li>🔹 Large Language Models (LLMs)</li>
-<li>🔹 Low-Resource Language Technologies</li>
-<li>🔹 Digital Humanities and Computational Manuscript Analysis</li>
-<li>🔹 Knowledge Graphs and Network Science</li>
-<li>🔹 Speech Processing and Multimodal AI</li>
-</ul>
+  <ul>
+    <li>
+      <strong><a href="https://www.cambridge.org/core/journals/natural-language-processing/article/statistical-machine-translation-for-indic-languages/022C193C28525D1C88A731C35DF1C388" target="_blank">
+      Statistical Machine Translation for Indic Languages.</a></strong><br>
+      Sudhansu Bala Das, Divyajyoti Panda, Tapas Kumar Mishra, and Bidyut Kr. Patra.
+      <i>Natural Language Engineering</i>, Vol.31(2), pp.328–345, 2025. <b>(SCI)</b>
+    </li>
 
+    <li>
+      <strong><a href="https://aclanthology.org/2025.globalnlp-1.0/" target="_blank">
+      Beyond English: Natural Language Processing for All Languages in an Era of Large Language Models.</a></strong><br>
+      Sudhansu Bala Das, Pruthwik Mishra, Alok Singh, Shamsuddeen Hassan Muhammad, Asif Ekbal, and Uday Kumar Das.
+      GlobalNLP Workshop, RANLP 2025, Varna, Bulgaria.
+    </li>
 
-<h2>Publications</h2>
+    <li>
+      <strong><a href="https://aclanthology.org/2025.lowresnlp-1.3/" target="_blank">
+      A Thresholding Method for Improving Translation Quality for Indic MT Tasks.</a></strong><br>
+      Sudhansu Bala Das, Leo Raphael Rodrigues, Tapas Kumar Mishra, and Bidyut Kr. Patra.
+      LowResNLP Workshop, RANLP 2025, Varna, Bulgaria.
+    </li>
 
+    <li>
+      <strong><a href="https://aclanthology.org/2025.indonlp-1.18/" target="_blank">
+      Investigating the Effect of Backtranslation for Indic Languages.</a></strong><br>
+      Sudhansu Bala Das, Samujjal Choudhury, Tapas Kumar Mishra, and Bidyut Kr. Patra.
+      IndoNLP Workshop, Abu Dhabi, 2025.
+    </li>
 
-<ul>
+    <li>
+      <strong><a href="https://doi.org/10.1145/3652026" target="_blank">
+      Multilingual Neural Machine Translation for Indic to Indic Languages.</a></strong><br>
+      Sudhansu Bala Das, Divyajyoti Panda, Tapas Kumar Mishra, Bidyut Kr. Patra, and Asif Ekbal.
+      <i>ACM TALLIP</i>, Vol.23(5), Article 65, 2024. <b>(SCI)</b>
+    </li>
 
+    <li>
+      <strong><a href="https://doi.org/10.1145/3587932" target="_blank">
+      Improving Multilingual Neural Machine Translation System for Indic Languages.</a></strong><br>
+      Sudhansu Bala Das, Atharv Biradar, Tapas Kumar Mishra, and Bidyut Kr. Patra.
+      <i>ACM TALLIP</i>, Vol.22(6), 2023. <b>(SCI)</b>
+    </li>
 
-<li>
-<strong>
-<a href="https://www.cambridge.org/core/journals/natural-language-processing/article/statistical-machine-translation-for-indic-languages/022C193C28525D1C88A731C35DF1C388" target="_blank">
-Statistical Machine Translation for Indic Languages.
-</a>
-</strong><br>
-Sudhansu Bala Das, Divyajyoti Panda, Tapas Kumar Mishra, and Bidyut Kr. Patra.
-<i>Natural Language Engineering</i>, Vol.31(2), pp.328–345, 2025.
-<b>(SCI)</b>
-</li>
+    <li>
+      <strong><a href="https://aclanthology.org/2022.wat-1.8/" target="_blank">
+      NIT Rourkela Machine Translation System Submission to WAT 2022 for MultiIndicMT.</a></strong><br>
+      Sudhansu Bala Das, Atharv Biradar, Tapas Kumar Mishra, and Bidyut Kr. Patra.
+      COLING Workshop on Asian Translation, Korea, 2022. <b>(CORE A*)</b>
+    </li>
 
+    <li>
+      <strong><a href="https://doi.org/10.1007/s41870-019-00351-5" target="_blank">
+      An Efficient Average Execution Time–Round-Robin Scheduling Algorithm.</a></strong><br>
+      S.B. Das, S.K. Mishra, A.K. Sahu. Springer International Journal of Information Technology, 2022.
+    </li>
 
-<li>
-<strong>
-<a href="https://aclanthology.org/2025.globalnlp-1.0/" target="_blank">
-Beyond English: Natural Language Processing for All Languages in an Era of Large Language Models.
-</a>
-</strong><br>
-Sudhansu Bala Das, Pruthwik Mishra, Alok Singh,
-Shamsuddeen Hassan Muhammad, Asif Ekbal, and Uday Kumar Das.
-GlobalNLP Workshop, RANLP 2025, Varna, Bulgaria.
-</li>
+    <li>
+      <strong><a href="https://doi.org/10.1007/978-981-19-1018-0_22" target="_blank">
+      GUI-Based Speech Recognition System Using Deep Learning Models.</a></strong><br>
+      Sudhansu Bala Das, Deepshikha Swain, Dipak Das. Springer LNNS, ICADCML 2022.
+    </li>
 
+    <li>
+      <strong><a href="https://doi.org/10.1016/j.jksuci.2018.04.005" target="_blank">
+      Alarm Coloring and Grouping Algorithm for Root Cause Analysis.</a></strong><br>
+      Sudhansu Bala Das, Sugyan Kumar Mishra, Anup Kumar Sahu.
+      Journal of King Saud University - Computer and Information Sciences. <b>(SCI)</b>
+    </li>
 
+    <li>
+      <strong><a href="https://doi.org/10.1109/ICORT46471.2019.9069643" target="_blank">
+      Study of Atmospheric Attenuation of IR Signature of Airborne Vehicle.</a></strong><br>
+      R.K. Dey, S. Mahakud, Sudhansu Bala Das, P. Roy, D. Das. IEEE ICORT 2019.
+    </li>
 
-<li>
-<strong>
-<a href="https://aclanthology.org/2025.lowresnlp-1.3/" target="_blank">
-A Thresholding Method for Improving Translation Quality for Indic MT Tasks.
-</a>
-</strong><br>
-Sudhansu Bala Das, Leo Raphael Rodrigues,
-Tapas Kumar Mishra, and Bidyut Kr. Patra.
-LowResNLP Workshop, RANLP 2025, Varna, Bulgaria.
-</li>
+    <li>
+      <strong><a href="https://doi.org/10.1109/ICICRS46726.2019.9555766" target="_blank">
+      Intelligent Optical Tracking.</a></strong><br>
+      Sudhansu Bala Das, Dipak Das, P.K. Swain. IEEE ICICRS 2019.
+    </li>
 
+    <li>
+      <strong>A Proposed What-Why-How Learning Model for Students and Strengthening Learning Skills Through Computational Thinking.</strong><br>
+      R. Mohanty and S. Bala Das. Springer AISC, 2018.
+    </li>
 
-
-<li>
-<strong>
-<a href="https://aclanthology.org/2025.indonlp-1.18/" target="_blank">
-Investigating the Effect of Backtranslation for Indic Languages.
-</a>
-</strong><br>
-Sudhansu Bala Das, Samujjal Choudhury,
-Tapas Kumar Mishra, and Bidyut Kr. Patra.
-IndoNLP Workshop, Abu Dhabi, 2025.
-</li>
-
-
-
-<li>
-<strong>
-<a href="https://doi.org/10.1145/3652026" target="_blank">
-Multilingual Neural Machine Translation for Indic to Indic Languages.
-</a>
-</strong><br>
-Sudhansu Bala Das, Divyajyoti Panda,
-Tapas Kumar Mishra, Bidyut Kr. Patra, and Asif Ekbal.
-<i>ACM TALLIP</i>, Vol.23(5), Article 65, 2024.
-<b>(SCI)</b>
-</li>
-
-
-
-<li>
-<strong>
-<a href="https://doi.org/10.1145/3587932" target="_blank">
-Improving Multilingual Neural Machine Translation System for Indic Languages.
-</a>
-</strong><br>
-Sudhansu Bala Das, Atharv Biradar,
-Tapas Kumar Mishra, and Bidyut Kr. Patra.
-<i>ACM TALLIP</i>, Vol.22(6), 2023.
-<b>(SCI)</b>
-</li>
-
-
-
-<li>
-<strong>
-<a href="https://aclanthology.org/2022.wat-1.8/" target="_blank">
-NIT Rourkela Machine Translation System Submission to WAT 2022 for MultiIndicMT.
-</a>
-</strong><br>
-Sudhansu Bala Das, Atharv Biradar,
-Tapas Kumar Mishra, and Bidyut Kr. Patra.
-COLING Workshop on Asian Translation, Korea, 2022.
-<b>(CORE A*)</b>
-</li>
-
-
-
-<li>
-<strong>
-<a href="https://doi.org/10.1007/s41870-019-00351-5" target="_blank">
-An Efficient Average Execution Time–Round-Robin Scheduling Algorithm.
-</a>
-</strong><br>
-S.B. Das, S.K. Mishra, A.K. Sahu.
-Springer International Journal of Information Technology, 2022.
-</li>
-
-
-
-<li>
-<strong>
-<a href="https://doi.org/10.1007/978-981-19-1018-0_22" target="_blank">
-GUI-Based Speech Recognition System Using Deep Learning Models.
-</a>
-</strong><br>
-Sudhansu Bala Das, Deepshikha Swain, Dipak Das.
-Springer LNNS, ICADCML 2022.
-</li>
-
-
-
-<li>
-<strong>
-<a href="https://doi.org/10.1016/j.jksuci.2018.04.005" target="_blank">
-Alarm Coloring and Grouping Algorithm for Root Cause Analysis.
-</a>
-</strong><br>
-Sudhansu Bala Das, Sugyan Kumar Mishra, Anup Kumar Sahu.
-Journal of King Saud University - Computer and Information Sciences.
-<b>(SCI)</b>
-</li>
-
-
-
-<li>
-<strong>
-<a href="https://doi.org/10.1109/ICORT46471.2019.9069643" target="_blank">
-Study of Atmospheric Attenuation of IR Signature of Airborne Vehicle.
-</a>
-</strong><br>
-R.K. Dey, S. Mahakud, Sudhansu Bala Das,
-P. Roy, D. Das. IEEE ICORT 2019.
-</li>
-
-
-
-<li>
-<strong>
-<a href="https://doi.org/10.1109/ICICRS46726.2019.9555766" target="_blank">
-Intelligent Optical Tracking.
-</a>
-</strong><br>
-Sudhansu Bala Das, Dipak Das, P.K. Swain.
-IEEE ICICRS 2019.
-</li>
-
-
-
-<li>
-<strong>
-A Proposed What-Why-How Learning Model for Students and Strengthening Learning Skills Through Computational Thinking.
-</strong><br>
-R. Mohanty and S. Bala Das.
-Springer AISC, 2018.
-</li>
-
-
-<li>
-<strong>
-Proof-of-Driving Incentive Mechanism for VANET to Enhance Traffic Safety and Efficiency.
-</strong><br>
-Surjya Kanta Daimary, Sekh Main Hasan,
-Hemanta Kumar Kalita, Sudhansu Bala Das.
-CRC Press, 2026. (Book Chapter)
-</li>
-
-
-</ul>
-
-
+    <li>
+      <strong>Proof-of-Driving Incentive Mechanism for VANET to Enhance Traffic Safety and Efficiency.</strong><br>
+      Surjya Kanta Daimary, Sekh Main Hasan, Hemanta Kumar Kalita, Sudhansu Bala Das.
+      CRC Press, 2026. (Book Chapter)
+    </li>
+  </ul>
 </section>
 
 </main>
@@ -637,6 +386,18 @@ CRC Press, 2026. (Book Chapter)
 <footer>
   <p>Sudhansu Bala Das | Copyright © 2026</p>
 </footer>
+
+<script>
+function showPage(pageId) {
+  const sections = document.querySelectorAll('.page-section');
+  sections.forEach(section => {
+    section.classList.remove('active');
+  });
+
+  document.getElementById(pageId).classList.add('active');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+</script>
 
 </body>
 </html>
