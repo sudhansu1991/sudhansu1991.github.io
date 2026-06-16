@@ -126,6 +126,14 @@ li {
   margin-bottom: 12px;
 }
 
+.page {
+  display: none;
+}
+
+.page.active {
+  display: block;
+}
+
 footer {
   max-width: 1050px;
   margin: 20px auto;
@@ -135,14 +143,6 @@ footer {
   text-align: center;
   color: #555;
   box-shadow: 0 3px 12px rgba(0,0,0,0.06);
-}
-
-.page-section {
-  display: none;
-}
-
-.page-section.active {
-  display: block;
 }
 
 @media(max-width:750px) {
@@ -181,9 +181,9 @@ footer {
 </header>
 
 <nav>
-  <a onclick="showPage('home')">Home</a>
+  <a href="#" onclick="showOnly('home')">Home</a>
   <a href="my_resume.pdf" target="_blank">CV</a>
-  <a onclick="showPage('research')">Research</a>
+  <a href="#" onclick="showOnly('research')">Research</a>
   <a href="https://www.linkedin.com/in/dr-sudhansu-bala-das-29832160/" target="_blank">LinkedIn</a>
   <a href="https://scholar.google.com/" target="_blank">Google Scholar</a>
   <a href="https://orcid.org/0000-0002-8150-3165" target="_blank">ORCiD</a>
@@ -191,7 +191,7 @@ footer {
 
 <main>
 
-<section id="home" class="page-section active">
+<section id="home" class="page active">
   <h2>Greetings from my corner of the WEB! 😊</h2>
 
   <p>
@@ -264,13 +264,14 @@ footer {
   </p>
 </section>
 
-<section id="research" class="page-section">
+<section id="research" class="page">
   <h2>Research</h2>
 
   <p>
-    My research focuses on Artificial Intelligence, Natural Language Processing (NLP), Machine Translation,
-    Data Science, and Digital Humanities. I am interested in developing AI-based technologies for multilingual
-    and low-resource languages, historical text analysis, and real-world intelligent systems.
+    My research focuses on Artificial Intelligence, Natural Language Processing (NLP),
+    Machine Translation, Data Science, and Digital Humanities. I am interested in
+    developing AI-based technologies for multilingual and low-resource languages,
+    historical text analysis, and real-world intelligent systems.
   </p>
 
   <h3>Research Interests</h3>
@@ -388,14 +389,17 @@ footer {
 </footer>
 
 <script>
-function showPage(pageId) {
-  const sections = document.querySelectorAll('.page-section');
-  sections.forEach(section => {
+function showOnly(sectionId) {
+  document.querySelectorAll('.page').forEach(function(section) {
     section.classList.remove('active');
   });
 
-  document.getElementById(pageId).classList.add('active');
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  document.getElementById(sectionId).classList.add('active');
+
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
 }
 </script>
 
