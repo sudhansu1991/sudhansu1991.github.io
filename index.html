@@ -502,7 +502,11 @@ CRC Press, 2026.
 </footer>
 
 <script>
+
+/* ================= PAGE SWITCH ================= */
+
 function showOnly(sectionId) {
+
   document.querySelectorAll('.page').forEach(function(section) {
     section.classList.remove('active');
   });
@@ -514,7 +518,80 @@ function showOnly(sectionId) {
     behavior: 'smooth'
   });
 }
+
+
+/* ================= QUOTE ROTATION ================= */
+
+const quotes = [
+
+  {
+    text:
+      "“कर्मण्येवाधिकारस्ते मा फलेषु कदाचन।”<br>" +
+      "<em>You have the right to perform your actions, but never be attached to the results.</em>",
+    source:
+      "— श्रीमद् भगवद् गीता (Bhagavad Gita)"
+  },
+
+
+  {
+    text:
+      "“Dream, dream, dream. Dreams transform into thoughts and thoughts result in action.”",
+    source:
+      "— Dr. A. P. J. Abdul Kalam"
+  },
+
+
+  {
+    text:
+      "“ସ୍ୱପ୍ନ ଦେଖ, ପରିଶ୍ରମ କର, ଆଗକୁ ବଢ଼।”<br>" +
+      "<em>Dream, work hard, and keep moving forward.</em>",
+    source:
+      "— ଓଡ଼ିଆ (Odia Thought)"
+  },
+
+
+  {
+    text:
+      "“Tús maith leath na hoibre.”<br>" +
+      "<em>A good beginning is half the work.</em>",
+    source:
+      "— Gaeilge (Irish Proverb)"
+  },
+
+
+  {
+    text:
+      "“خواب دیکھو، محنت کرو، آگے بڑھتے رہو۔”<br>" +
+      "<em>Dream, work hard, and keep moving forward.</em>",
+    source:
+      "— اردو (Urdu Thought)"
+  }
+
+];
+
+
+let quoteIndex = 0;
+
+
+setInterval(function() {
+
+  quoteIndex =
+    (quoteIndex + 1) % quotes.length;
+
+
+  document.getElementById("rotatingQuote").innerHTML =
+    quotes[quoteIndex].text +
+    "<span>" +
+    quotes[quoteIndex].source +
+    "</span>";
+
+}, 5000);
+
+
 </script>
+
+</body>
+</html>
 
 </body>
 </html>
