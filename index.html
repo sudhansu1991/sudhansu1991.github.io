@@ -54,7 +54,6 @@ header {
   font-size: 17px;
 }
 
-
 /* ================= MENU ================= */
 
 nav {
@@ -80,7 +79,6 @@ nav a:hover {
   color: #002f4b;
   text-decoration: underline;
 }
-
 
 /* ================= CONTENT ================= */
 
@@ -132,49 +130,36 @@ li {
   margin-bottom: 12px;
 }
 
+/* ================= ROTATING QUOTE ================= */
 
-/* ================= QUOTE BOX ================= */
-
-.quote-box {
-  margin-top: 35px;
-  padding: 28px;
-  background: linear-gradient(
-      135deg,
-      #f8fbff,
-      #ffffff
-  );
-  border-left: 5px solid #123c69;
-  border-radius: 15px;
-  box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+.quote-rotator {
+  margin-top: 30px;
+  padding: 22px 26px;
+  background: #f8fbff;
+  border-left: 4px solid #123c69;
+  border-radius: 12px;
+  font-size: 18px;
+  color: #333;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.05);
 }
 
-
-.quote-box h3 {
-  margin-top: 0;
-  color: #123c69;
-  font-size: 23px;
+.quote-rotator p {
+  margin: 0;
+  text-align: left;
+  font-style: italic;
 }
 
-
-.quote {
-  margin: 18px 0;
-  padding: 12px 18px;
-  background: #ffffff;
-  border-radius: 10px;
-  font-size: 16px;
-  line-height: 1.7;
-}
-
-
-.quote strong {
+.quote-rotator span {
+  display: block;
+  margin-top: 8px;
   color: #005b96;
+  font-style: normal;
+  font-weight: 600;
 }
 
-
-.quote em {
-  color: #444444;
+.connect-line {
+  margin-top: 22px;
 }
-
 
 /* ================= PAGE SWITCH ================= */
 
@@ -185,7 +170,6 @@ li {
 .page.active {
   display: block;
 }
-
 
 /* ================= FOOTER ================= */
 
@@ -200,11 +184,9 @@ footer {
   box-shadow: 0 3px 12px rgba(0,0,0,0.06);
 }
 
-
 /* ================= MOBILE ================= */
 
 @media(max-width:750px) {
-
   header {
     flex-direction: column;
     text-align: center;
@@ -223,11 +205,11 @@ footer {
     padding: 25px;
   }
 
-  .quote-box {
-    padding: 20px;
+  .quote-rotator {
+    padding: 18px;
+    font-size: 16px;
   }
 }
-
 </style>
 </head>
 
