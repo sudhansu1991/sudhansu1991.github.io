@@ -54,6 +54,9 @@ header {
   font-size: 17px;
 }
 
+
+/* ================= MENU ================= */
+
 nav {
   max-width: 1050px;
   margin: 0 auto 25px auto;
@@ -77,6 +80,9 @@ nav a:hover {
   color: #002f4b;
   text-decoration: underline;
 }
+
+
+/* ================= CONTENT ================= */
 
 main {
   max-width: 1050px;
@@ -126,6 +132,52 @@ li {
   margin-bottom: 12px;
 }
 
+
+/* ================= QUOTE BOX ================= */
+
+.quote-box {
+  margin-top: 35px;
+  padding: 28px;
+  background: linear-gradient(
+      135deg,
+      #f8fbff,
+      #ffffff
+  );
+  border-left: 5px solid #123c69;
+  border-radius: 15px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+}
+
+
+.quote-box h3 {
+  margin-top: 0;
+  color: #123c69;
+  font-size: 23px;
+}
+
+
+.quote {
+  margin: 18px 0;
+  padding: 12px 18px;
+  background: #ffffff;
+  border-radius: 10px;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+
+.quote strong {
+  color: #005b96;
+}
+
+
+.quote em {
+  color: #444444;
+}
+
+
+/* ================= PAGE SWITCH ================= */
+
 .page {
   display: none;
 }
@@ -133,6 +185,9 @@ li {
 .page.active {
   display: block;
 }
+
+
+/* ================= FOOTER ================= */
 
 footer {
   max-width: 1050px;
@@ -145,7 +200,11 @@ footer {
   box-shadow: 0 3px 12px rgba(0,0,0,0.06);
 }
 
+
+/* ================= MOBILE ================= */
+
 @media(max-width:750px) {
+
   header {
     flex-direction: column;
     text-align: center;
@@ -163,7 +222,12 @@ footer {
   section {
     padding: 25px;
   }
+
+  .quote-box {
+    padding: 20px;
+  }
 }
+
 </style>
 </head>
 
@@ -258,26 +322,70 @@ footer {
     <li>🔹 Speech Processing and Multimodal AI Systems</li>
   </ul>
 
-<p>
-  Inspired by the vision of <strong>Dr. A. P. J. Abdul Kalam</strong>, 
-  I believe that dreams, curiosity, and continuous learning are the foundations 
-  for creating meaningful innovations. 🚀
-</p>
+<div class="quote-box">
+
+<h3>🌍 Words that Inspire Me</h3>
 
 <p>
-  Great ideas often begin with a simple conversation. 😊 
-  If you are interested in exploring new ideas, collaborating on research, 
+  Inspired by the vision of <strong>Dr. A. P. J. Abdul Kalam</strong>, 
+  I believe that dreams, curiosity, continuous learning, and dedication 
+  are the foundations for creating meaningful innovations. 🚀
+</p>
+
+
+<p class="quote">
+<strong>भगवद्गीता (Bhagavad Gita):</strong><br>
+"कर्मण्येवाधिकारस्ते मा फलेषु कदाचन"<br>
+<em>
+"You have the right to perform your actions, but never be attached to the results."
+</em>
+</p>
+
+
+<p class="quote">
+<strong>ଓଡ଼ିଆ (Odia):</strong><br>
+"ସ୍ୱପ୍ନ ଦେଖ, ପରିଶ୍ରମ କର, ଆଗକୁ ବଢ଼।"<br>
+<em>
+"Dream, work hard, and keep moving forward."
+</em>
+</p>
+
+
+<p class="quote">
+<strong>Gaeilge (Irish):</strong><br>
+"Tús maith leath na hoibre."<br>
+<em>
+"A good beginning is half the work."
+</em>
+</p>
+
+
+<p class="quote">
+<strong>اردو (Urdu):</strong><br>
+"خواب دیکھو، محنت کرو، اور آگے بڑھتے رہو۔"<br>
+<em>
+"Dream, work hard, and keep moving forward."
+</em>
+</p>
+
+
+<p>
+  💡 Great ideas often begin with a simple conversation. 
+  If you are interested in exploring new ideas, collaborating on research,
   or building impactful applications using 
-  <strong>Large Language Models (LLMs)</strong>, 
-  Natural Language Processing, and AI-driven technologies, feel free to reach out to me at 
+  <strong>Large Language Models (LLMs)</strong>, Natural Language Processing,
+  and AI-driven technologies, feel free to reach out:
   <strong>baladas.sudhansu[at]gmail[dot]com</strong>.
 </p>
 
+
 <p>
-  I am always happy to connect with researchers, students, developers, and 
-  curious minds who believe in using technology to solve real-world problems 
-  and create a positive impact.
+  I am always happy to connect with researchers, students, developers, 
+  and curious minds who believe in using technology to solve real-world problems 
+  and create a positive impact. 😊
 </p>
+
+</div>
 </section>
 
 <section id="research" class="page">
